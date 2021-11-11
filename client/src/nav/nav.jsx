@@ -14,19 +14,15 @@ const Nav = () => {
   ];
 
   return (
-    <div>
-      <nav className="nav_">
-        <Link className="inicio" to="/">
-          Inicio
-        </Link>
-        <Link to="/nosotros">Nosotros</Link>
-        <Select
-          placeholder="Nuestros Servicios"
-          value={optionService}
-          options={options}
-        />
-        <Link to="/nosotros">Contáctanos</Link>
-      </nav>
+    <div className="nav_">
+      <Link to="/">Inicio</Link>
+      <Link to="/nosotros">Nosotros</Link>
+      <Select
+        placeholder="Nuestros Servicios"
+        value={optionService}
+        options={options}
+      />
+      <Link to="/contactanos">Contáctanos</Link>
     </div>
   );
 };

@@ -1,0 +1,173 @@
+.contenedor {
+  padding-bottom: 0.5rem;
+  width: 98%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .contenedor h2 {
+    font-family: "montserrat" sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .contenedor h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+}
+.seccion1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.contenido-centrado {
+  text-align: center;
+}
+.contactanos_ {
+  display: flex;
+  position: fixed;
+  background-color: gray;
+  justify-content: center;
+  width: 100%;
+}
+.form_ {
+  position: relative;
+  top: 3rem;
+}
+.contactanos {
+  color: #474444;
+  font-family: "montserrat" sans-serif;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .contactanos {
+    font-size: 2rem;
+  }
+}
+
+.formulario-lleno {
+  font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  .formulario-lleno {
+    font-size: 3.4rem;
+  }
+}
+
+.contacto p {
+  font-size: 1rem;
+  color: #474444;
+  margin: 2rem 0 0 0;
+}
+@media (min-width: 768px) {
+  .contacto p {
+    font-size: 2rem;
+  }
+}
+legend {
+  text-align: center;
+  font-size: 1rem;
+  color: #474444;
+}
+@media screen and (min-width: 768px) {
+  legend {
+    font-size: 2rem;
+  }
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+legend.centrar-legend {
+  text-align: center;
+}
+
+label {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+}
+
+.boton {
+  font-size: 2rem;
+  background-color: #ff8300;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+}
+
+.boton:hover {
+  background-color: #ffc107;
+  cursor: pointer;
+}
+input:not([type="submit"]),
+textarea,
+select {
+  padding: 1rem;
+  /**para que tome todo el espacio disponible**/
+  display: block;
+  /**para que mida el 100%**/
+  width: 90%;
+  /**color de fondo del texto**/
+  background-color: #e1e1e1;
+  /**Para separar todos los input**/
+  margin-bottom: 2rem;
+  /**quitar color de los bordes**/
+  border: none;
+  /**y para quitar esquinas y colocarlas redondeadas se utiliza border-radius**/
+  border-radius: none;
+}
+
+input[type="radio"] {
+  width: auto;
+  margin: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  height: 20rem;
+}
+
+.contenedor-contacto {
+  display: flex;
+}
+
+.foto-servicio {
+  margin: 10px;
+}
+
+.foto-servicio img {
+  border-radius: 10px;
+}
+
+.forma-contacto {
+  max-width: 50%;
+  padding-left: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .forma-contacto {
+    max-width: 50%;
+    padding-left: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
