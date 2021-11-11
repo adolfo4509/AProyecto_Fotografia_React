@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/contactanos.css";
-import { boostrap } from "bootstrap";
 
 const Contactanos = () => {
   return (
