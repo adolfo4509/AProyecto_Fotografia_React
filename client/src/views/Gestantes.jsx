@@ -2,15 +2,14 @@ import React from "react";
 import Nav from "../nav/nav";
 import Footer from "./Footer";
 
-const Home = () => {
+const Gestantes = () => {
   return (
     <div>
       <Nav />
-      <h2>Nuestros eventos</h2>
-      <div className="home_principal"></div>
+      <h2>Gestantes</h2>
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Gestantes;

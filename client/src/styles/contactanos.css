@@ -127,6 +127,7 @@ select {
   border: none;
   /**y para quitar esquinas y colocarlas redondeadas se utiliza border-radius**/
   border-radius: none;
+  outline-style: none;
 }
 
 input[type="radio"] {

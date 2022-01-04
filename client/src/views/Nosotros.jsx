@@ -1,19 +1,21 @@
 import React from "react";
 import Nav from "../nav/nav";
 import "../styles/nosotros.css";
+import Footer from "./Footer";
+import imagen1 from "../assets/imageProduct/vision.jpeg";
+import imagen2 from "../assets/imageProduct/mision.jpg";
+import imagen3 from "../assets/imageProduct/nosotros.jpg";
 
 const Nosotros = () => {
   return (
     <div>
-      <div className="nav_Nosotros">
-        <Nav />
-      </div>
+      <Nav />
 
       <div className="nosotros">
         <div>
-          <h1 className="nosotros_h1">Más Sobre nosotros</h1>
+          <h2 className="nosotros_h1">Más Sobre nosotros</h2>
           <div className="nosotros_cuerpo">
-            <img src="" alt="imag not found"></img>
+            <img src={imagen3} alt="imag not found"></img>
             <p className="nosotros_cuerpo_izquierda">
               La creación de nuestra empresa Nació bajo la idea de un proyecto
               de grado, en el año 2001 cuando terminaba mis estudios de Técnico
@@ -40,34 +42,35 @@ const Nosotros = () => {
           <h2 className="nosotros_h2">Nuestra Misión y Visión</h2>
           <div className="mision_vision">
             <div className="vision_">
-              <h3 className="nosotros_h3">Nuestra Visión</h3>
+              <h3 className="nosotros_h3">Nuestra Misión</h3>
               <div className="nosotros_cuerpo_">
-                <img className="img_" src="" alt="imag not found"></img>
+                <img className="img_" src={imagen2} alt="imag not found"></img>
                 <p className="nosotros_cuerpo_derecha">
-                  La misión de Alexander Vasquez Fotografía y Video es
-                  especializar en toda clase de eventos sociales, con una amplia
-                  experiencia en el sector, ofreciendo servicios de alta calidad
-                  y oportunidad dejando plasmados los mejores momentos de sus
-                  vidas, ya sea en video o fotografía.
+                  Ofrecer a nuestros clientes un excelente portafolio de
+                  servicios para lograr que los mejores momentos de sus vidas,
+                  sean plasmados para la posteridad, ofrecer una atención
+                  personalizada y así lograr con nuestra experiencia satisfacer
+                  al máximo sus necesidades.
                 </p>
               </div>
             </div>
             <div className="vision_">
               <h3 className="nosotros_h3">Nuestra Visión</h3>
               <div className="nosotros_cuerpo_">
-                <img className="img_" src="" alt="imag not found"></img>
+                <img className="img_" src={imagen1} alt="imag not found"></img>
                 <p className="nosotros_cuerpo_derecha">
                   Ser una empresa líder que está a la vanguardia en la toma de
                   fotografía profesional, además ofrecer un amplio portafolio de
                   servicios con cobertura a nivel Regional, manejando los
                   mejores equipos tecnológicos, tener un acercamiento verdadero
-                  con los nuestros usuarios.
+                  con nuestros usuarios.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

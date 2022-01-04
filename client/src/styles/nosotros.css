@@ -5,11 +5,9 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  border: 1px solid #ccc;
 }
 .nosotros {
-  position: relative;
-  top: 4.5rem;
+  margin-top: 5rem;
 }
 .nav_Nosotros {
   width: 100%;
@@ -42,9 +40,7 @@
 .nosotros_h3 {
   text-align: center;
 }
-.mision_vision {
-  border: 1px solid #ccc;
-}
+
 .img_ {
   width: 250px;
 }
@@ -52,5 +48,4 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  border: 1px solid #ccc;
 }

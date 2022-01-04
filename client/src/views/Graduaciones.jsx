@@ -2,15 +2,14 @@ import React from "react";
 import Nav from "../nav/nav";
 import Footer from "./Footer";
 
-const Home = () => {
+const Graduaciones = () => {
   return (
     <div>
       <Nav />
-      <h2>Nuestros eventos</h2>
-      <div className="home_principal"></div>
+      <h2>Graduaciones</h2>
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Graduaciones;

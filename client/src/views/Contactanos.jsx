@@ -1,14 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Nav from "../nav/nav";
 import "../styles/contactanos.css";
+import Footer from "./Footer";
 
 const Contactanos = () => {
   return (
     <div>
-      <div className="contactanos_">
-        <Link to="/">Inicio</Link>
-        <Link to="/nosotros">Nosotros</Link>
-      </div>
+      <Nav />
       <div className="contenedor seccion contenido-centrado">
         <h1 className="contactanos centrar-texto">Contacto</h1>
         <h2 className="formulario-lleno centrar-texto">
@@ -18,9 +16,14 @@ const Contactanos = () => {
           <fieldset>
             <legend>Información Personal</legend>
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" placeholder="Nombre" />
+            <input type="text" id="nombre" placeholder="Nombre" required />
             <label for="nombre">Apellidos</label>
-            <input type="text" id="apellidos" placeholder="Apellidos" />
+            <input
+              type="text"
+              id="apellidos"
+              placeholder="Apellidos"
+              required
+            />
 
             <label for="email">E-Mail</label>
             <input type="email" id="email" placeholder="e-mail" required />
@@ -69,11 +72,12 @@ const Contactanos = () => {
             <input type="text" />
             <label for="mensaje">Observaciones</label>
             <textarea id="mensaje"></textarea>
-            <button className="btn btn-primay">Enviar</button>
+            {/* <button className="btn btn-primay">Enviar</button> */}
             <input class="boton boton-verde" type="submit" value="Enviar" />
           </fieldset>
         </form>
       </div>
+      <Footer />
     </div>
   );
 };

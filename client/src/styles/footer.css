@@ -1,0 +1,56 @@
+.copyright {
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+  gap: 10rem;
+}
+.copyright p {
+  color: #23bfbf;
+  font-size: 18px;
+}
+.site-footer {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  bottom: 5px;
+  position: fixed;
+}
+.site-footer p {
+  font-size: 1.5rem;
+  color: #23bfbf;
+}
+@media (min-width: 768px) {
+}
+
+.fa-instagram {
+  font-size: 2.5rem;
+  margin-right: 0.3rem;
+  color: #da65f1b5;
+}
+.fa-facebook {
+  font-size: 2.5rem;
+  margin-right: 0.3rem;
+  color: #3b5998;
+}
+.fa-telegram {
+  font-size: 2.5rem;
+  margin-right: 0.3rem;
+  color: #0088cc;
+}
+.fa-whatsapp {
+  font-size: 2.5rem;
+  margin-right: 0.3rem;
+  color: #25d366;
+}
+@media (min-width: 768px) {
+  .iconos-w {
+    font-size: 2.5rem;
+    margin-left: 0.5rem;
+    color: #3ead1293;
+  }
+  .iconos-f {
+    font-size: 2.5rem;
+    margin-right: 0.5rem;
+    color: #1399d893;
+  }
+}
