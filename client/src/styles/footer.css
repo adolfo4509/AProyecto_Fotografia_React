@@ -1,25 +1,45 @@
 .copyright {
   display: flex;
   background-color: #000;
-  justify-content: center;
+  justify-content: space-between;
   gap: 10rem;
+
+  flex-direction: column;
 }
 .copyright p {
   color: #23bfbf;
   font-size: 18px;
+  margin-left: 2%;
 }
-.site-footer {
+.site-footer1 {
   display: flex;
   align-items: center;
   font-size: 3rem;
-  bottom: 5px;
+  bottom: 30px;
   position: fixed;
+  margin-left: 5%;
 }
 .site-footer p {
   font-size: 1.5rem;
   color: #23bfbf;
 }
 @media (min-width: 768px) {
+  .copyright {
+    display: flex;
+    background-color: #000;
+    justify-content: space-between;
+    gap: 10rem;
+    margin-top: 1px;
+    flex-direction: row;
+  }
+  .site-footer1 {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    bottom: 5px;
+    position: fixed;
+    margin-left: 75%;
+  }
 }
 
 .fa-instagram {

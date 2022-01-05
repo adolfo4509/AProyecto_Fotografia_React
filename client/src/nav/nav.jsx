@@ -44,8 +44,8 @@ const Nav = () => {
             <div className="nav_servicios">
               <label className="nav_servicios_label">Nuestros Servicios</label>
               <Select
+                className="selectores"
                 onChange={handleChange}
-                className="nav_servicios_select"
                 placeholder="Selecciona un servicio"
                 options={options}
               />

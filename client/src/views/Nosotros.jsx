@@ -10,13 +10,14 @@ const Nosotros = () => {
   return (
     <div>
       <Nav />
-
+      <h2 className="nosotros_h1">Más Sobre nosotros</h2>
       <div className="nosotros">
-        <div>
-          <h2 className="nosotros_h1">Más Sobre nosotros</h2>
-          <div className="nosotros_cuerpo">
+        <div className="grid">
+          <div className="columnas-6">
             <img src={imagen3} alt="imag not found"></img>
-            <p className="nosotros_cuerpo_izquierda">
+          </div>
+          <div className="columnas-6">
+            <p className="nosotros_cuerpo_derecha">
               La creación de nuestra empresa Nació bajo la idea de un proyecto
               de grado, en el año 2001 cuando terminaba mis estudios de Técnico
               en Sistemas con Énfasis en Diseño Gráfico y Multimedia. Dicho
@@ -38,37 +39,33 @@ const Nosotros = () => {
           </div>
         </div>
 
-        <div>
+        <section className="contenedor">
           <h2 className="nosotros_h2">Nuestra Misión y Visión</h2>
-          <div className="mision_vision">
-            <div className="vision_">
+          <div className="grid">
+            <div className="columnas-6">
               <h3 className="nosotros_h3">Nuestra Misión</h3>
-              <div className="nosotros_cuerpo_">
-                <img className="img_" src={imagen2} alt="imag not found"></img>
-                <p className="nosotros_cuerpo_derecha">
-                  Ofrecer a nuestros clientes un excelente portafolio de
-                  servicios para lograr que los mejores momentos de sus vidas,
-                  sean plasmados para la posteridad, ofrecer una atención
-                  personalizada y así lograr con nuestra experiencia satisfacer
-                  al máximo sus necesidades.
-                </p>
-              </div>
+              <img className="img_" src={imagen2} alt="imag not found"></img>
+              <p className="nosotros_cuerpo_derecha">
+                Ofrecer a nuestros clientes un excelente portafolio de servicios
+                para lograr que los mejores momentos de sus vidas, sean
+                plasmados para la posteridad, ofrecer una atención personalizada
+                y así lograr con nuestra experiencia satisfacer al máximo sus
+                necesidades.
+              </p>
             </div>
-            <div className="vision_">
+            <div className="columnas-6-1">
               <h3 className="nosotros_h3">Nuestra Visión</h3>
-              <div className="nosotros_cuerpo_">
-                <img className="img_" src={imagen1} alt="imag not found"></img>
-                <p className="nosotros_cuerpo_derecha">
-                  Ser una empresa líder que está a la vanguardia en la toma de
-                  fotografía profesional, además ofrecer un amplio portafolio de
-                  servicios con cobertura a nivel Regional, manejando los
-                  mejores equipos tecnológicos, tener un acercamiento verdadero
-                  con nuestros usuarios.
-                </p>
-              </div>
+              <img className="img_" src={imagen1} alt="imag not found"></img>
+              <p className="nosotros_cuerpo_derecha">
+                Ser una empresa líder que está a la vanguardia en la toma de
+                fotografía profesional, además ofrecer un amplio portafolio de
+                servicios con cobertura a nivel Regional, manejando los mejores
+                equipos tecnológicos, tener un acercamiento verdadero con
+                nuestros usuarios.
+              </p>
             </div>
           </div>
-        </div>
+        </section>
       </div>
       <Footer />
     </div>

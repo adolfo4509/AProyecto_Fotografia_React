@@ -4,6 +4,9 @@ import "../styles/contactanos.css";
 import Footer from "./Footer";
 
 const Contactanos = () => {
+  const btnEnviar = (e) => {
+    e.preventDefault();
+  };
   return (
     <div>
       <Nav />
@@ -72,8 +75,13 @@ const Contactanos = () => {
             <input type="text" />
             <label for="mensaje">Observaciones</label>
             <textarea id="mensaje"></textarea>
-            {/* <button className="btn btn-primay">Enviar</button> */}
-            <input class="boton boton-verde" type="submit" value="Enviar" />
+
+            <input
+              onClick={btnEnviar}
+              className="boton boton-verde"
+              type="submit"
+              value="Enviar"
+            />
           </fieldset>
         </form>
       </div>
