@@ -1,11 +1,14 @@
-import Nav from "../nav/nav";
+import Footer from '../Footer/Footer'
+import Nav from '../nav/nav'
 
 const Gestantes = () => {
-  return <div>
-
-      <Nav/>
+  return (
+    <div>
+      <Nav />
       <h1>Somos el componente de Gestantes</h1>
-  </div>;
-};
+      <Footer />
+    </div>
+  )
+}
 
-export default Gestantes;
+export default Gestantes

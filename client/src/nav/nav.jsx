@@ -1,44 +1,35 @@
-import React from "react";
-import { Link ,useHistory} from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import "../styles/nav.css";
-import Select from "react-select";
+import '../styles/styles.css'
 
 const Nav = () => {
- // const [optionService, setOptionService] = useState([]);
-  const history = useHistory()
-  const options = [
-    { value: "Eventos religiosos", label: "Eventos religiosos" },
-    { value: "Tus mejores Recuerdos", label: "Tus mejores Recuerdos" },
-    { value: "Quinceañeras", label: "Quinceañeras" },
-    { value: "Graduaciones", label: "Graduaciones" },
-    { value: "Gestantes", label: "Gestantes" },
-  ];
-const Redirigir = (e) =>{
-    
-if(e.value === "Eventos religiosos") history.push("/EventosReligiosos")
-if(e.value === "Tus mejores Recuerdos")  history.push("/recuerdos")
-if(e.value === "Quinceañeras")  history.push("/quinceañeras")
-if(e.value === "Graduaciones")  history.push("/graduaciones")
-if(e.value === "Gestantes") history.push("/gestantes")
+  return (
+    <div className="header">
+      <div className="contenedor-hero">
+        <Link className="inicio" to="/">
+          <h1>Alexander Vásquez Fotografo profesional </h1>
+        </Link>
+        <p>
+          <i className="fas fa-map-marker-alt"></i> Popayán, Cauca, Colombia{' '}
+        </p>
+        <div className="barra">
+          <nav id="nav" className="navegacion-principal">
+            <Link className="enlace-navegacion" to="/">
+              Inicio
+            </Link>
+            <Link to="/nosotros">Nosotros</Link>
+            <Link to="/EventosReligiosos">Eventos religiosos</Link>
+            <Link to="/recuerdos">Tus mejores Recuerdos</Link>
+            <Link to="/graduaciones">Graduaciones</Link>
+            <Link to="/gestantes">Gestantes</Link>
+            <Link to="/quinceañeras">Quinceañeras</Link>
+            <Link to="/contactanos">Contáctanos</Link>
+          </nav>
+        </div>
+      </div>
+    </div>
+  )
 }
 
-  return (
-    <div>
-      <nav className="nav_">
-        <Link className="inicio" to="/">
-          Inicio
-        </Link>
-        <Link to="/nosotros">Nosotros</Link>
-        <Select onChange={Redirigir}
-          placeholder="Nuestros Servicios"
-         // value={optionService}
-          options={options}
-        />
-        <Link to="/contactanos">Contáctanos</Link>
-      </nav>
-    </div>
-  );
-};
-
-export default Nav;
+export default Nav
