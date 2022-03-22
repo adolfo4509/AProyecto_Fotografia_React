@@ -8,7 +8,7 @@ const Nav = () => {
     <div className="header">
       <div className="contenedor-hero">
         <Link className="inicio" to="/">
-          <h1>Alexander Vásquez Fotografo profesional </h1>
+          <h1>Alexander Vásquez Fotografo profesional Uni </h1>
         </Link>
         <p>
           <i className="fas fa-map-marker-alt"></i> Popayán, Cauca, Colombia{' '}
