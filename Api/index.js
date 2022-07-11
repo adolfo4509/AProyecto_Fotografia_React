@@ -25,74 +25,74 @@ const { conn, Category, Size, Type, Rol, User } = require("./src/db.js");
 const { PORT } = process.env;
 const bcrypt = require("bcryptjs");
 
-async function preload() {
-  const categoriesData = [
-    "Elegant",
-    "Casual",
-    "Vintage",
-    "Punk",
-    "Sport",
-    "Futbol",
-  ];
-  const sizesData = ["XXS", "XS", "S", "M", "L", "XL", "XXL"];
-  const typesData = [
-    "Dress",
-    "Sweater",
-    "Hoodie",
-    "Shirt",
-    "Short",
-    "Jean",
-    "Shoes",
-    "Hats",
-  ];
-  const rolesData = ["superAdmin", "admin", "user", "banned", "inactive"];
+// async function preload() {
+//   const categoriesData = [
+//     "Elegant",
+//     "Casual",
+//     "Vintage",
+//     "Punk",
+//     "Sport",
+//     "Futbol",
+//   ];
+//   const sizesData = ["XXS", "XS", "S", "M", "L", "XL", "XXL"];
+//   const typesData = [
+//     "Dress",
+//     "Sweater",
+//     "Hoodie",
+//     "Shirt",
+//     "Short",
+//     "Jean",
+//     "Shoes",
+//     "Hats",
+//   ];
+//   const rolesData = ["superAdmin", "admin", "user", "banned", "inactive"];
 
-  for (categoryData of categoriesData) {
-    await Category.findOrCreate({
-      where: {
-        name: categoryData,
-      },
-    });
-  }
-  for (sizeData of sizesData) {
-    await Size.findOrCreate({
-      where: {
-        name: sizeData,
-      },
-    });
-  }
-  for (typeData of typesData) {
-    await Type.findOrCreate({
-      where: {
-        name: typeData,
-      },
-    });
-  }
-  for (rolData of rolesData) {
-    await Rol.findOrCreate({
-      where: {
-        name: rolData,
-      },
-    });
-  }
+//   for (categoryData of categoriesData) {
+//     await Category.findOrCreate({
+//       where: {
+//         name: categoryData,
+//       },
+//     });
+//   }
+//   for (sizeData of sizesData) {
+//     await Size.findOrCreate({
+//       where: {
+//         name: sizeData,
+//       },
+//     });
+//   }
+//   for (typeData of typesData) {
+//     await Type.findOrCreate({
+//       where: {
+//         name: typeData,
+//       },
+//     });
+//   }
+//   for (rolData of rolesData) {
+//     await Rol.findOrCreate({
+//       where: {
+//         name: rolData,
+//       },
+//     });
+//   }
 
-  const superAdmin = {
-    name: "Juan",
-    email: "juan123@gmail.com",
-    password: "12345",
-  };
-  const hashedPassword = await bcrypt.hash(superAdmin.password, 10);
-  const [newUser, created] = await User.findOrCreate({
-    where: {
-      email: superAdmin.email,
-    },
-    defaults: {
-      name: superAdmin.name,
-      password: hashedPassword,
-    },
-  });
-  await newUser.setRol(1);
-} // temporal function
+//   const superAdmin = {
+//     name: "Juan",
+//     email: "juan123@gmail.com",
+//     password: "12345",
+//   };
+//   const hashedPassword = await bcrypt.hash(superAdmin.password, 10);
+//   const [newUser, created] = await User.findOrCreate({
+//     where: {
+//       email: superAdmin.email,
+//     },
+//     defaults: {
+//       name: superAdmin.name,
+//       password: hashedPassword,
+//     },
+//   });
+//   await newUser.setRol(1);
+// } // temporal function
 
 // Syncing all the models at once.
 
